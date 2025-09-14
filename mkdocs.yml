@@ -1,11 +1,13 @@
 site_name: locom
 site_url: https://localcompose.github.io/locom
 repo_url: https://github.com/localcompose/locom
+
 theme:
   name: material
   features:
     - navigation.tabs
     - content.tabs.link  # enables clickable OS tabs
+
 nav:
   - Home: index.md
   - Installation & Usage:
@@ -13,3 +15,11 @@ nav:
       - CLI Reference: cli-reference.md
   - Versions:
       - v0.0.3-poc: versions/0.0.3-poc/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
